@@ -40,6 +40,7 @@ public class Model
         }
     }
 
+
     public void writeFile(String line, Boolean op)
     {
         FileWriter fichero = null ;

@@ -1,0 +1,19 @@
+aa: hola
+b: hola
+aa: que tal el otro dia en el concierto?
+b: muy bien la verdad
+b: habia de todo
+aa: hola
+b: no se que pasa
+b: parece que no te llegan todos los mensajes
+b: no uses ;
+b: aaa;aaa
+b: no se que ha podido pasar
+b: hola de nuevo
+aa: hola hola
+aa: hola
+aa: hola bicho
+aa: me recives?
+aa: *recibes?
+aa: hola
+aa: hola

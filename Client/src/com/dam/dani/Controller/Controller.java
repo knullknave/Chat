@@ -32,10 +32,11 @@ public class Controller implements ActionListener, ListSelectionListener
     {
         this.w = w;
         m = new Model();
-        ignorados = new ArrayList<>();
-        ignorados = m.readFile();
+
         modelo = new DefaultListModel();
         this.w.userList.setModel(modelo);
+
+        ignorados = new ArrayList<>();
 
         this.w.menuItem4.addActionListener(this);
         this.w.menuItem5.addActionListener(this);
@@ -143,20 +144,18 @@ public class Controller implements ActionListener, ListSelectionListener
                     w.textField1.setText("");
                     break;
                 case "Ignore":
-
-                        if (!ignorados.contains(userSelected)) {
-                            m.writeFile(userSelected, true);
-                            ignorados.add(userSelected);
-                        }
-
+                    if (!ignorados.contains(userSelected))
+                    {
+                        m.writeFile(userSelected, true);
+                        ignorados.add(userSelected);
+                    }
                     break;
                 case "Leave Ignoring":
-
-                        if (ignorados.contains(userSelected)) {
-                            m.removeLine(userSelected);
-                            ignorados.remove(userSelected);
-                        }
-
+                    if (ignorados.contains(userSelected))
+                    {
+                        m.removeLine(userSelected);
+                        ignorados.remove(userSelected);
+                    }
                     break;
             }
         }

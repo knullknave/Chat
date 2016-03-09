@@ -24,7 +24,7 @@ public class Main
                 Socket socket = server.listen();
                 //connections = server.getConnections(socket);
 
-                if(!server.checkPort(socket.getInetAddress().getHostAddress()))
+                //if(!server.checkPort(socket.getInetAddress().getHostAddress()))
                 {
                     server.addPort(socket.getInetAddress().getHostAddress());
                     cc = new ClientConnection(socket, server);
@@ -32,7 +32,7 @@ public class Main
                     Thread t = new Thread(cc);
                     t.start();
                 }
-                else
+                //else
                 {
                     System.out.println("A user with this ip is already connected");
                 }
